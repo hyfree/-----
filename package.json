@@ -1,0 +1,17 @@
+{
+  "name": "MuyaExample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@marktext/muya": "^0.2.5"
+  },
+  "devDependencies":{
+    "vite": "^5.1.4",
+    "vite-plugin-dts": "^3.7.3"
+  },
+  "scripts": {
+    "dev": "vite"
+   
+  }
+}
