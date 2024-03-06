@@ -21,7 +21,8 @@ import {
 
 
 import './style.css';
-
+// 需要导入CSS
+import '@marktext/muya/dist/assets/style.css'
 
 
 export const DEFAULT_MARKDOWN = `---
