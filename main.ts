@@ -1,6 +1,7 @@
-import Muya from "@marktext/muya/dist/index";
+import Muya from "@marktext/muya";
 import zh from '@marktext/muya/dist/locales/zh';
 import MD2Html from '@marktext/muya/dist/state/markdownToHtml';
+import { TState } from "@marktext/muya/dist/state/types";
 
 import {
   CodeBlockLanguageSelector,
@@ -21,11 +22,7 @@ import {
 
 import './style.css';
 
-if (!(Intl as any).Segmenter) {
-  const polyfill = await import('intl-segmenter-polyfill/dist/bundled');
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (Intl as any).Segmenter = await polyfill.createIntlSegmenterPolyfill();
-}
+
 
 export const DEFAULT_MARKDOWN = `---
 title: muya
@@ -45,8 +42,7 @@ Inline format
 `;
 
 
-import './style.css';
-import { TState } from "@marktext/muya/dist/state/types";
+
 
 
 
